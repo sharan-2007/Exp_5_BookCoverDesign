@@ -1,103 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Book Cover</title>
+<meta charset="UTF-8">
+<title>Book Front Cover</title>
 
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #000000df;
-            font-family: "Georgia", serif;
-        }
-
-        .book-cover {
-            width: 360px;
-            height: 560px;
-            background-image: url("bg1.jpeg");
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            padding: 30px;
-            box-sizing: border-box;
-            border: 2px solid white;
-            box-shadow:
-                0 0 15px rgba(255,255,255,0.6),
-                0 0 30px rgba(255,255,255,0.4);
-        }
-
-        .overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(255,255,255,0.15);
-
-        }
-        .company-badge {
-             position: absolute;
-             top: 15px;
-             right: 15px;
-             padding: 6px 12px;
-             font-size: 11px;
-             letter-spacing: 2px;
-             color: white;
-
-             border: 1px solid white;
-             background: rgba(0, 0, 0, 0.6);
-
-            z-index: 6;
-            text-transform: uppercase;
-
-  box-shadow: 0 0 8px rgba(255,255,255,0.6);
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#111;
+    font-family:Georgia, serif;
 }
 
-
-        .content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-        }
-        .my-name {
-            position: absolute;
-            bottom: 15px;
-            right: 20px;              
-            font-size: 14px;
-            letter-spacing: 2px;
-            color: rgb(0, 0, 0);
-            z-index: 5;
-            text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+.book-cover{
+    width:360px;
+    height:560px;
+    background:url("fight_club_bg.jpg") no-repeat center/cover;
+    position:relative;
+    border:2px solid #fff;
+    box-shadow:0 0 25px rgba(255,140,0,0.8);
 }
 
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
 
-        .title {
-            font-size: 32px;
-            font-weight: bold;
-            line-height: 1.2;
-            margin-top: 10px;
-        }
+.badge{
+    position:absolute;
+    top:15px;
+    right:15px;
+    padding:6px 12px;
+    font-size:11px;
+    letter-spacing:2px;
+    color:#fff;
+    border:1px solid #fff;
+    z-index:2;
+}
 
-        .author {
-            margin-top: 15px;
-            font-size: 18px;
-            font-style: italic;
-        }
-    </style>
+.content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    color:#fff;
+    margin-top:200px;
+}
+
+.content h1{
+    font-size:32px;
+    line-height:1.2;
+}
+
+.footer{
+    position:absolute;
+    bottom:15px;
+    right:20px;
+    color:#fff;
+    font-size:13px;
+    z-index:2;
+}
+</style>
+
 </head>
 <body>
 
-    <div class="book-cover">
-        <div class="overlay"></div>
-       <div class="company-badge">SpYdeR BOOKS</div>
+<div class="book-cover">
+    <div class="overlay"></div>
 
-        <div class="content">
-        </div>
-        <div class="my-name">
-             Dinesh Karthik TD <br> 25013939
-            </div>
+    <div class="badge">PEARSON</div>
+
+    <div class="content">
+        <h1>Tyler Durden</h1>
     </div>
+
+    <div class="footer">
+        M Sharan Kumar<br>
+        Ref No: 25005446
+    </div>
+</div>
 
 </body>
 </html>
